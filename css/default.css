@@ -166,13 +166,26 @@
 
  #menuToggle span{
     width: 68px;
-    height: 14px;
+    height: 15px;
+    border-radius: 0;
  }
  #menu{
-     margin-top: -110px;
+     margin-top: -130px;
+     padding-top: 160px;
+ }
+ #menu a li{
+     font-size: 40px;
+ }
+ #menuToggle input{
+    width: 120px;
+    height: 82px;
  }
  #logo{
     height: 100px;
     margin: 0 auto;
     display: block;
+    margin-top: -50px;
+ }
+ nav{
+     padding-top: 20px;
  }
