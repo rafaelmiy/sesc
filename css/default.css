@@ -160,8 +160,19 @@
  {
    transform: none;
  }
+
+
+
+
+ #menuToggle span{
+    width: 68px;
+    height: 14px;
+ }
+ #menu{
+     margin-top: -110px;
+ }
  #logo{
-    height: 80px;
+    height: 100px;
     margin: 0 auto;
     display: block;
  }
