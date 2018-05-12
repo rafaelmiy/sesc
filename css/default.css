@@ -172,9 +172,10 @@
  #menu{
      margin-top: -130px;
      padding-top: 160px;
+     width: 90%;    
  }
  #menu a li{
-     font-size: 40px;
+     font-size: 8pc;
  }
  #menuToggle input{
     width: 120px;
