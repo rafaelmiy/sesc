@@ -240,8 +240,9 @@ nav{
 .slider {
     margin: 0 auto;
     color: #333;
-    background: #419be0;
-    height: 500px;
+    /* background: #419be0; */
+    /* height: 500px; */
+    margin-bottom: 60px;
 }
 
 .slick-slide {
@@ -250,9 +251,14 @@ nav{
     background: white;
     height: auto;
 }
+.slick-slide.slick-current img{
+    box-shadow: 0px 14px 42px rgba(0, 0, 0, 0.5);
+}
 .slick-slide:not(.slick-current){
     /* height: 400px; */
     /* margin-top: 50px; */
+    /* padding: 60px; */
+    opacity: 0.6;
 }
 .slider .center img{
     width: 100%;
@@ -293,4 +299,68 @@ i{
 }
 .show{
     display: initial!important;
+}
+.sections{
+    margin: 0 10px;
+}
+.sections .box{
+    width: 48%;
+    height: 350px;
+    background: #000000;
+    float: left;
+    margin: 1%;
+    float: left;
+    padding: 50px 10px;
+    border-radius: 13px;
+}
+.sections .box p{
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+}
+.sections .box i{
+    margin: 0 auto;
+    font-size: 160px;
+    display: block;
+    width: 160px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.sections .box.culture{
+    background: linear-gradient(50.59deg, #C51B1B -16.82%, #FF5F4F 100.1%);
+}
+.sections .box.sports{
+    background: linear-gradient(228.78deg, #17D6FF -22.78%, #3A7BD5 100.09%);
+}
+.sections .box.medias{
+    background: linear-gradient(231.54deg, #ED22FF 2.51%, #8520EA 99.81%);
+}
+.sections .box.services{
+    background: linear-gradient(133.13deg, #FC4A1A -43.39%, #F7B733 107.17%);
+}
+.sections .box.units{
+    background: linear-gradient(52.35deg, #56AB2F -6.88%, #A8E063 102.88%);
+}
+.sections .box.courses{
+    background: linear-gradient(49.97deg, #FDEB71 5.25%, #F8D800 100.19%);
+}
+.slider .center .bottom{
+    width: 100px;
+    height: 100px;
+    background: black;
+    position: relative;
+    top: -59px;
+    left: 82%;
+    border-radius: 100px;
+}
+.slider .center .bottom i{
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 68px;
+    padding-top: 15px;
+    color: #ffffff;
+}
+.slider .center .bottom.culture{
+    background: linear-gradient(45.62deg, #C51B1B -16.62%, #FF5F4F 100.09%);
 }
