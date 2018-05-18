@@ -33,10 +33,10 @@
                                 <p>Sesc Consolação</p>
                             </div>
                         </div>
-                        <a href="#"><li class="home"><i class="icon-home3"></i>Home</li></a>
+                        <a href="#"><li class="home active"><i class="icon-home3"></i>Home</li></a>
                         <a href="#"><li class="culture"><i class=""></i>Cultura</li></a>
                         <a href="#"><li class="sports"><i class="icon-dribbble"></i>Esportes</li></a>
-                        <a href="#"><li class="media active"><i class="icon-tv"></i>Conteudoteca</li></a>
+                        <a href="#"><li class="medias"><i class="icon-tv"></i>Conteudoteca</li></a>
                         <a href="#"><li class="services">Serviços</li></a>
                         <a href="#"><li class="units"><i class="icon-location2"></i>Unidades</li></a>
                         <a href="#"><li class="courses"><i class="icon-pencil"></i>Cursos</li></a>
@@ -51,19 +51,19 @@
 
             <div class="slider">
                     <div class="center">
-                        <div>
+                        <div class="slider-margin">
                             <img src="image/slider_1.png">
                             <div class="bottom culture">
                                 <i class="icon-location2"></i>
                             </div>
                         </div>
-                        <div>
+                        <div class="slider-margin">
                             <img src="image/slider_2.png">
                             <div class="bottom culture">
                                 <i class="icon-location2"></i>
                             </div>
                         </div>
-                        <div>
+                        <div class="slider-margin">
                             <img src="image/slider_3.png">
                             <div class="bottom culture">
                                 <i class="icon-location2"></i>
@@ -97,16 +97,19 @@
                     <i class="icon-pencil"></i>
                     <p>Cursos</p>
                 </div>
+                <div class="clear"></div>
             </div>
         </div>
         <script>
             $('.center').slick({
                 dots: false,
                 centerMode: true,
-                centerPadding: '90px',
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                arrows: false
+                arrows: false,
+                // autoplay: true,
+                // autoplaySpeed:2500,
+                // speed: 500,
             });
         </script>
     </body>

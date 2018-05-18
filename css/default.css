@@ -194,8 +194,11 @@ body{
     border-left: 20px solid;
     padding-left: 60px;
 }
-#menu a li.media.active{
+#menu a li.medias.active{
     color: #F94A4A;
+}
+#menu a li.home.active{
+    color: #000000;
 }
 #menu hr{
     width: 50%;
@@ -259,6 +262,7 @@ nav{
     /* margin-top: 50px; */
     /* padding: 60px; */
     opacity: 0.6;
+    transform: scale(0.95);
 }
 .slider .center img{
     width: 100%;
@@ -363,4 +367,7 @@ i{
 }
 .slider .center .bottom.culture{
     background: linear-gradient(45.62deg, #C51B1B -16.62%, #FF5F4F 100.09%);
+}
+.clear{
+    clear: both;
 }
