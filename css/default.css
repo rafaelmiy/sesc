@@ -178,27 +178,54 @@ body{
     margin-bottom: 10px;
 }
 #menu{
-    margin-top: -130px;
+    margin-top: -120px;
     padding-top: 12px;
     padding-left: 0;
     width: 75%;
     background: #ffffff; 
     z-index: 3;
+    height: 101%;
+}
+#menu a{
+    text-decoration: none;
 }
 #menu a li{
     font-size: 4pc;
     padding-left: 80px;
     color: #929292;
 }
-#menu a li.active{
+#menu a li.active,
+#menu a li:hover{
     border-left: 20px solid;
     padding-left: 60px;
 }
-#menu a li.medias.active{
-    color: #F94A4A;
-}
-#menu a li.home.active{
+#menu a li.home.active,
+#menu a li.home:hover{
     color: #000000;
+}
+#menu a li.cultura.active,
+#menu a li.cultura:hover{
+    color: #C51B1B;
+}
+#menu a li.esportes.active,
+#menu a li.esportes:hover{
+    color: #17D6FF;
+}
+#menu a li.conteudoteca.active,
+#menu a li.conteudoteca:hover{
+    color: #8520EA;
+}
+#menu a li.servicos.active,
+#menu a li.servicos:hover{
+    color: #F7B733;
+}
+#menu a li.unidades.active,
+#menu a li.unidades:hover{
+    color: #56AB2F;
+}
+#menu a li.cursos.active,
+#menu a li.cursos:hover{
+    color: #FDEB71;
 }
 #menu hr{
     width: 50%;
@@ -305,17 +332,15 @@ i{
     display: initial!important;
 }
 .sections{
-    margin: 0 10px 70px;
+    /* margin: 0 10px 70px; */
 }
 .sections .box{
-    width: 48%;
+    width: 50%;
     height: 350px;
     background: #000000;
     float: left;
-    margin: 1%;
     float: left;
     padding: 50px 10px;
-    border-radius: 13px;
 }
 .sections .box p{
     text-align: center;
@@ -326,26 +351,27 @@ i{
     margin: 0 auto;
     font-size: 160px;
     display: block;
-    width: 160px;
+    text-align: center;
+    width: 250px;
     color: #ffffff;
     margin-bottom: 20px;
 }
-.sections .box.culture{
+.sections .box.cultura{
     background: linear-gradient(50.59deg, #C51B1B -16.82%, #FF5F4F 100.1%);
 }
-.sections .box.sports{
+.sections .box.esportes{
     background: linear-gradient(228.78deg, #17D6FF -22.78%, #3A7BD5 100.09%);
 }
-.sections .box.medias{
+.sections .box.conteudoteca{
     background: linear-gradient(231.54deg, #ED22FF 2.51%, #8520EA 99.81%);
 }
-.sections .box.services{
+.sections .box.servicos{
     background: linear-gradient(133.13deg, #FC4A1A -43.39%, #F7B733 107.17%);
 }
-.sections .box.units{
+.sections .box.unidades{
     background: linear-gradient(52.35deg, #56AB2F -6.88%, #A8E063 102.88%);
 }
-.sections .box.courses{
+.sections .box.cursos{
     background: linear-gradient(49.97deg, #FDEB71 5.25%, #F8D800 100.19%);
 }
 .slider .center .bottom{
@@ -365,9 +391,88 @@ i{
     padding-top: 15px;
     color: #ffffff;
 }
-.slider .center .bottom.culture{
+.slider .center .bottom.cultura{
     background: linear-gradient(45.62deg, #C51B1B -16.62%, #FF5F4F 100.09%);
 }
 .clear{
     clear: both;
+}
+
+
+/* CONTEUDOTECA */
+.conteudoteca-section .header{
+    background-image: url("../image/header/conteudoteca.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 60px;
+    margin-bottom: 80px;
+}
+.conteudoteca-section .header .header-back{
+    font-size: 30px;
+    padding: 50px 50px 0;
+}
+.conteudoteca-section .header .header-back div:nth-child(1){
+    text-align: left;
+}
+.conteudoteca-section .header .header-back div:nth-child(3){
+    text-align: right;
+}
+.conteudoteca-section .header .header-back i{
+    font-size: 5pc;
+    display: block;
+    width: 100%;
+    color: #ffffff;
+}
+.conteudoteca-section .header .header-back a{
+    text-decoration: none;
+}
+.conteudoteca-section .header .header-back img{
+    /* position: absolute; */
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    margin-top: -20px;
+    filter: invert(100%);
+}
+
+.conteudoteca-section .header h2{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 40px;
+    font-size: 44px;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.conteudoteca-section .main{
+    text-align: center;
+    padding: 0 80px;
+    color: #000000;
+}
+.conteudoteca-section .main p:nth-child(1),
+.conteudoteca-section .main p:nth-child(2){
+    font-size: 50px;
+    margin-bottom: 80px;
+}
+.conteudoteca-section .main span{
+    font-size: 43px;
+    font-weight: bold;
+    margin-bottom: 150px;
+}
+.conteudoteca-section .main .areas{
+    margin-top: 100px;
+}
+.conteudoteca-section .main .areas a{
+    color: #ffffff;
+    background: #000000;
+    display: block;
+    padding: 18px;
+    margin-bottom: 70px;
+}
+.conteudoteca-section .main .areas a h1{
+    font-size: 55px;
+}
+.conteudoteca-section .main .areas a:nth-child(3){
+    padding: 38px;
 }
