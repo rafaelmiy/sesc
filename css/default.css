@@ -1,23 +1,31 @@
-/*
-* Made by Erik Terwan
-* 24th of November 2015
-* MIT License
-*
-*
-* If you are thinking of using this in
-* production code, beware of the browser
-* prefixes.
-*/
-
+@font-face{
+	font-family: roboto;
+	src: url("fonts/Roboto-Regular.ttf") format("opentype");
+}
+@font-face{
+	font-family: roboto-light;
+	src: url("fonts/Roboto-Light.ttf") format("opentype");
+}
+@font-face{
+	font-family: roboto-slab;
+	src: url("fonts/RobotoSlab-Regular.ttf") format("opentype");
+}
+@font-face{
+	font-family: roboto-slab-light;
+	src: url("fonts/RobotoSlab-Light.ttf") format("opentype");
+}
+@font-face{
+	font-family: roboto-bold;
+	src: url("fonts/Roboto-Bold.ttf") format("opentype");
+}
 body
 {
+    font-family: "roboto-light";
     margin: 0;
     padding: 0;
 
-    /* make it look decent enough */
     background: #232323;
     color: #cdcdcd;
-    font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
 a
@@ -63,9 +71,8 @@ a:hover
     -webkit-touch-callout: none;
 }
 
-/*
-* Just a quick hamburger
-*/
+
+/* HAMBURGUER MENU */
 #menuToggle span
 {
     display: block;
@@ -96,10 +103,7 @@ a:hover
     transform-origin: 0% 100%;
 }
 
-/* 
-* Transform all the slices of hamburger
-* into a crossmark.
-*/
+
 #menuToggle input:checked ~ span
 {
     opacity: 1;
@@ -107,27 +111,19 @@ a:hover
     background: #232323;
 }
 
-/*
-* But let's hide the middle one.
-*/
+
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
-* Ohyeah and the last one should go the other direction
-*/
+
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
     transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
-* Make this absolute positioned
-* at the top left of the screen
-*/
 #menu
 {
     position: absolute;
@@ -139,7 +135,6 @@ a:hover
     background: #ededed;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
 
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
@@ -153,9 +148,6 @@ a:hover
     font-size: 22px;
 }
 
-/*
-* And let's slide it in from the left
-*/
 #menuToggle input:checked ~ ul
 {
     transform: none;
@@ -209,7 +201,7 @@ body{
 }
 #menu a li.esportes.active,
 #menu a li.esportes:hover{
-    color: #17D6FF;
+    color: #13BCE0;
 }
 #menu a li.conteudoteca.active,
 #menu a li.conteudoteca:hover{
@@ -399,80 +391,363 @@ i{
 }
 
 
-/* CONTEUDOTECA */
-.conteudoteca-section .header{
-    background-image: url("../image/header/conteudoteca.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding-bottom: 60px;
-    margin-bottom: 80px;
-}
-.conteudoteca-section .header .header-back{
-    font-size: 30px;
-    padding: 50px 50px 0;
-}
-.conteudoteca-section .header .header-back div:nth-child(1){
-    text-align: left;
-}
-.conteudoteca-section .header .header-back div:nth-child(3){
-    text-align: right;
-}
-.conteudoteca-section .header .header-back i{
-    font-size: 5pc;
-    display: block;
-    width: 100%;
-    color: #ffffff;
-}
-.conteudoteca-section .header .header-back a{
-    text-decoration: none;
-}
-.conteudoteca-section .header .header-back img{
-    /* position: absolute; */
-    height: 100px;
-    margin: 0 auto;
-    display: block;
-    margin-top: -20px;
-    filter: invert(100%);
-}
 
-.conteudoteca-section .header h2{
-    text-align: center;
-    color: #ffffff;
-    margin-top: 40px;
-    font-size: 44px;
-}
-.row{
-    margin-left: 0;
-    margin-right: 0;
-}
-.conteudoteca-section .main{
-    text-align: center;
-    padding: 0 80px;
-    color: #000000;
-}
-.conteudoteca-section .main p:nth-child(1),
-.conteudoteca-section .main p:nth-child(2){
-    font-size: 50px;
-    margin-bottom: 80px;
-}
-.conteudoteca-section .main span{
-    font-size: 43px;
-    font-weight: bold;
-    margin-bottom: 150px;
-}
-.conteudoteca-section .main .areas{
-    margin-top: 100px;
-}
-.conteudoteca-section .main .areas a{
-    color: #ffffff;
-    background: #000000;
-    display: block;
-    padding: 18px;
-    margin-bottom: 70px;
-}
-.conteudoteca-section .main .areas a h1{
-    font-size: 55px;
-}
-.conteudoteca-section .main .areas a:nth-child(3){
-    padding: 38px;
-}
+/* HEADER GERAL DE PÁGINAS */
+    .header{
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding-bottom: 60px;
+        margin-bottom: 80px;
+    }
+    .header .header-back{
+        font-size: 30px;
+        padding: 50px 50px 0;
+    }
+    .header .header-back div:nth-child(1){
+        text-align: left;
+    }
+    .header .header-back div:nth-child(3){
+        text-align: right;
+    }
+    .header .header-back i{
+        font-size: 5pc;
+        display: block;
+        width: 100%;
+        color: #ffffff;
+    }
+    .header .header-back a{
+        text-decoration: none;
+    }
+    .header .header-back img{
+        height: 100px;
+        margin: 0 auto;
+        display: block;
+        margin-top: -20px;
+        filter: invert(100%);
+    }
+    .header h2{
+        text-align: center;
+        color: #ffffff;
+        margin-top: 40px;
+        font-size: 44px;
+        font-family: "roboto-slab";
+    }
+/* FIM DO HEADER GERAL */
+
+
+
+
+/* CONTEUDOTECA */
+    .conteudoteca-section .header{
+        background-image: url("../image/header/conteudoteca.png");
+    }
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .conteudoteca-section .main{
+        text-align: center;
+        padding: 0 80px;
+        color: #000000;
+    }
+    .conteudoteca-section .main p:nth-child(1),
+    .conteudoteca-section .main p:nth-child(2){
+        font-size: 50px;
+        margin-bottom: 80px;
+    }
+    .conteudoteca-section .main span{
+        font-size: 43px;
+        font-weight: bold;
+        margin-bottom: 150px;
+        font-family: "roboto-regular";
+    }
+    .conteudoteca-section .areas{
+        margin-top: 100px;
+    }
+    .conteudoteca-section .areas a{
+        color: #ffffff;
+        background: #000000;
+        display: block;
+        padding: 18px;
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 38px;
+    }
+    .conteudoteca-section .areas a h1{
+        font-size: 55px;
+    }
+    .conteudoteca-section .areas a h1 b{
+        font-family: "roboto-regular";
+    }
+    .conteudoteca-section .areas a h2{
+        font-size: 40px;
+        font-family: "roboto-slab-light";
+    }
+    .conteudoteca-section .areas a:nth-child(1){
+        background: linear-gradient(257.74deg, #6A3093 0%, #A044FF 100%);
+    }
+    .conteudoteca-section .areas a:nth-child(2){
+        background: linear-gradient(257.74deg, #5700AF 0%, #8200FF 100%);
+    }
+    .conteudoteca-section .areas a:nth-child(3){
+        background: linear-gradient(257.76deg, #41295A 16.92%, #2F0743 100%);
+    }
+
+/* FIM DE CONTEUDOTECA */
+
+
+
+/* UNIDADES */
+
+    .unidades-section .header{
+        background-image: url("../image/header/unidades.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding-bottom: 60px;
+        margin-bottom: 80px;
+    }
+    .unidades-section .main{
+        margin: 0 70px;
+    }
+    .unidades-section .main .filtro{
+        margin: 40px 0;
+        color: #000000;
+        font-size: 35px;
+        font-family: "roboto-regular";
+    }
+    .unidades-section .main .filtro div:nth-child(2){
+        text-align: right;
+    }
+    .unidades-section .main .filtro i{
+        margin-right: 10px;
+    }
+    .unidades-section .main .unidade{
+        padding-top: 20px;
+        background: #000;
+        margin-bottom: 50px;
+    }
+    .unidades-section .main .unidade .details{
+        margin-top: 150px;
+        color: #fff;
+        padding: 0 40px;
+        background: linear-gradient(4.9deg, #010101 2.79%, rgba(0, 0, 0, 0.15) 67.6%);
+    }
+    .unidades-section .main .unidade .details b{
+        font-size: 50px;
+    }
+    .unidades-section .main .unidade .details p{
+        font-size: 28px;
+    }
+    .unidades-section .main .unidade .details p i{
+        margin: 0;
+    }
+    .unidades-section .main .unidade .details span{
+        text-align: right;
+        width: 100%;
+        display: block;
+        font-size: 50px;
+        margin-top: -70px;
+    }
+    /* BACKGROUNDS DE UNIDADES */
+        .unidades-section .main .unidade:nth-child(3){
+            background-image: url("../image/unidades/image1.png");
+        }
+        .unidades-section .main .unidade:nth-child(4){
+            background-image: url("../image/unidades/image2.png");
+        }
+        .unidades-section .main .unidade:nth-child(5){
+            background-image: url("../image/unidades/image3.png");
+        }
+        .unidades-section .main .unidade:nth-child(6){
+            background-image: url("../image/unidades/image4.png");
+        }
+        .unidades-section .main .unidade:nth-child(7){
+            background-image: url("../image/unidades/image5.png");
+        }
+        .unidades-section .main .unidade{
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    /* FIM DE BACKGROUNDS DE UNIDADES */
+
+/* FIM DE UNIDADES */
+
+
+
+
+/* CULTURA */
+    #cultureTabs{
+        font-size: 45px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: inherit;
+        border: none;
+    }
+    #cultureTabs li{
+        margin: 0 40px 30px;
+        display: inline-block;
+    }
+    #cultureTabs li.active{
+        font-family: "roboto-bold";
+    }
+    #cultureTabs li a:hover{
+        color: #000000;
+        text-decoration: none;
+    }
+    .cultura-section .tabbable hr{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .cultura-section .header{
+        background-image: url("../image/header/cultura.png");
+    }
+    .cultura-section .tab-content>.active{
+        opacity: 1;
+    }
+    .cultura-section .tab-content{
+        padding: 0 60px;
+    }
+    .cultura-section .filtro{
+        font-size: 30px;
+        color: #000000;
+        padding: 0 60px;
+        margin-bottom: 40px;
+    }
+    .cultura-section .filtro i{
+        margin: 5px;
+    }
+    .cultura-section .filtro div{
+        padding: 0 5px;
+    }
+    .cultura-section .filtro div:first-child{
+        text-align: left;
+    }
+    .cultura-section .filtro div:not(:first-child):not(:last-child){
+        text-align: center;
+    }
+    .cultura-section .filtro div:last-child{
+        text-align: right;
+    }
+
+
+    .cultura-section .tab-content .evento{
+        padding-top: 1px;
+        background: #000;
+        margin-bottom: 50px;
+    }
+    .cultura-section .tab-content .evento .details{
+        margin-top: 100px;
+        color: #fff;
+        padding: 20px;
+        padding-top: 110px;
+        padding-left: 0;
+        padding-bottom: 30px;
+        background: linear-gradient(4.9deg, #010101 2.79%, rgba(0, 0, 0, 0) 87.6%);
+    }
+    .cultura-section .tab-content .evento .details .event-details b{
+        font-size: 50px;
+    }
+    .cultura-section .tab-content .evento .details .event-details p{
+        font-size: 28px;
+    }
+    .cultura-section .tab-content .evento .details .event-details p i.icon-unidades{
+        margin-right: 10px;
+    }
+    .cultura-section .tab-content .evento .details .event-details i.icon-share{
+        text-align: right;
+        width: 100%;
+        display: block;
+        font-size: 50px;
+        margin-top: -70px;
+        padding-right: 30px;
+    }
+    .cultura-section .tab-content .evento .details div:first-child{
+        width: 20%;
+    }
+    .cultura-section .tab-content .evento .details div:last-child{
+        width: 80%;
+    }
+    .cultura-section .tab-content .evento .details .date{
+        font-size: 30px;
+        margin-top: 20px;
+        text-align: center;
+        padding: 0;
+    }
+    .cultura-section .tab-content .evento .details .date h2{
+        font-size: 70px;
+        margin: 0;
+        line-height: 80%;
+    }
+    .cultura-section .tab-content .evento .details .date span{
+        text-transform: uppercase;
+    }
+    .cultura-section .tab-content .evento .details .event-details{
+        padding: 0;
+    }
+    .cultura-section .tab-content .evento .details .event-details p{
+        font-size: 30px;
+    }
+    .cultura-section .tab-content .evento .details .event-details p{
+        font-family: "roboto-light";
+    }
+    .cultura-section .tab-content .evento .details .event-details p span{
+        font-size: 25px;
+        font-family: "roboto-bold";
+    }
+    .cultura-section .tab-content .evento{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    #teatro .evento:nth-child(1){
+        background-image: url("../image/cultura/c1.png");
+    }
+    #teatro .evento:nth-child(2){
+        background-image: url("../image/cultura/c2.png");
+    }
+    #teatro .evento:nth-child(3){
+        background-image: url("../image/cultura/c3.png");
+    }
+    #teatro .evento:nth-child(4){
+        background-image: url("../image/cultura/c4.png");
+    }
+
+
+    #seminario .evento:nth-child(1){
+        background-image: url("../image/seminario/s1.png");
+    }
+    #seminario .evento:nth-child(2){
+        background-image: url("../image/seminario/s2.png");
+    }
+    #seminario .evento:nth-child(3){
+        background-image: url("../image/seminario/s3.png");
+    }
+
+
+    #exposicao .evento:nth-child(1){
+        background-image: url("../image/exposicao/e1.png");
+    }
+    #exposicao .evento:nth-child(2){
+        background-image: url("../image/exposicao/e2.png");
+    }
+    #exposicao .evento:nth-child(3){
+        background-image: url("../image/exposicao/e3.png");
+    }
+
+
+    #musica .evento:nth-child(1){
+        background-image: url("../image/musica/m1.png");
+    }
+    #musica .evento:nth-child(2){
+        background-image: url("../image/musica/m2.png");
+    }
+    #musica .evento:nth-child(3){
+        background-image: url("../image/musica/m3.png");
+    }
+    #musica .evento:nth-child(4){
+        background-image: url("../image/musica/m4.png");
+    }
+
+/* FIM DE CULTURA */
