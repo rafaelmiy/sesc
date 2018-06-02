@@ -23,22 +23,15 @@ body
     font-family: "roboto-light";
     margin: 0;
     padding: 0;
-
     background: #232323;
-    color: #cdcdcd;
+    color: #000000;
 }
 
 a
 {
     text-decoration: none;
     color: #232323;
-
     transition: color 0.3s ease;
-}
-
-a:hover
-{
-    color: tomato;
 }
 
 #menuToggle
@@ -550,19 +543,19 @@ i{
     }
     /* BACKGROUNDS DE UNIDADES */
         .unidades-section .main .unidade:nth-child(3){
-            background-image: url("../image/unidades/image1.png");
+            background-image: url("../image/unidades/image5.png");
         }
         .unidades-section .main .unidade:nth-child(4){
-            background-image: url("../image/unidades/image2.png");
+            background-image: url("../image/unidades/image1.png");
         }
         .unidades-section .main .unidade:nth-child(5){
-            background-image: url("../image/unidades/image3.png");
+            background-image: url("../image/unidades/image2.png");
         }
         .unidades-section .main .unidade:nth-child(6){
-            background-image: url("../image/unidades/image4.png");
+            background-image: url("../image/unidades/image3.png");
         }
         .unidades-section .main .unidade:nth-child(7){
-            background-image: url("../image/unidades/image5.png");
+            background-image: url("../image/unidades/image4.png");
         }
         .unidades-section .main .unidade{
             background-repeat: no-repeat;
@@ -751,3 +744,152 @@ i{
     }
 
 /* FIM DE CULTURA */
+
+
+
+/* DETALHES DA UNIDADE - PARTE FEITA NA AULA */
+
+#tudo {
+	background-image: url("../image/unit-details/bg_unidades.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	max-width: 800px;
+}
+#topo {
+	text-align: center;
+	padding-top: 10px;
+}
+#bt-voltar, #bt-buscar {
+	display: block;
+	width: 10%;
+}
+#bt-voltar img, #bt-buscar img {
+	width: 100%;
+}
+
+#bt-voltar {
+	float: left;
+}
+#bt-buscar {
+	float: right;
+	margin: 5px 10px 0px 0px;
+	width: 7%;
+}
+#logo2 img{
+	width: 20%;
+}
+.unit-details{
+    margin-bottom: 70px;
+}
+.unit-details h1 {
+	font-family: 'roboto-slab', serif;
+	color: white;
+	font-size: 19px;
+	font-weight: 700;
+	text-align: center;
+}
+#tour {
+	background-image: url("../image/unit-details/img_main.jpg");
+	background-size: auto 110%;
+	background-position: center;
+	height: 183px;
+	overflow: hidden;
+}
+#tour img {
+	display: block;
+	width: 20%;
+	margin: 115px 0px 0px 72%;
+}
+.unit-details main {
+	padding: 15px 15px 15px 15px;
+}
+#fotos {
+	padding-top: 15px;
+	padding-bottom: 0px;
+	overflow: hidden;
+}
+#fotos img {
+	display: block;
+	width: 31%;
+	margin-right: 3px;
+	float: left;   			
+}
+.unit-details h2 {
+	font-family: 'roboto', sans-serif;
+	color: #000;
+	font-size: 26px;
+	font-weight: 300;
+	margin-bottom: 5px;
+	margin-top: 15px;
+}
+.unit-details .tx-local {
+	font-family: 'roboto', sans-serif;
+	color: #4f4f4f;
+	font-size: 14px;
+	font-weight: 300;
+	background-image: url("../image/unit-details/icn_pin.png");
+	background-repeat: no-repeat;
+	background-size: 14px auto;
+	padding-left: 17px;
+	margin-top: 0;
+}
+.unit-details .tx-telefone, .tx-email {
+	font-family: 'roboto', sans-serif;
+	color: #000;
+	font-size: 16px;
+	font-weight: 400;
+	background-image: url("../image/unit-details/icn_phone.png");
+	background-repeat: no-repeat;
+	background-size: 28px auto;
+	padding-left: 37px;
+	margin-top: 30px;
+	margin-left: 8%;
+}
+.unit-details .tx-telefone span, .tx-email span {
+	color: #4f4f4f;
+	font-weight: 300;
+	font-size: 14px;
+}
+.unit-details .tx-email {
+	background-image: url("../image/unit-details/icn_at.png");
+	margin-top: 0;
+	margin-left: 8%;			
+}
+.unit-details hr {
+	border: #EEEEEE solid 1px;
+}
+
+.unit-details h3 {
+	font-family: 'roboto', sans-serif;
+	color: #000;
+	font-size: 17px;
+	font-weight: 500;
+	margin-bottom: 5px;
+	margin-top: 15px;			
+}
+.unit-details .p {
+	color: #4f4f4f;
+	font-family: 'roboto', sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	margin-bottom: 25px;
+}
+#fixo-inferior {
+	position: fixed;
+	bottom: 0;
+	background-color: white;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	box-shadow: 0px 5px 18px #666;
+}
+#fixo-inferior a {
+	background-color: #000;
+	padding: 10px 50px;
+	color: white;
+	text-decoration: none;
+	font-family: 'roboto', sans-serif;
+	font-weight: 400;
+	border-radius: 34px;
+}
