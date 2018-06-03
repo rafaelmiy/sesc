@@ -169,7 +169,7 @@ body{
     width: 75%;
     background: #ffffff; 
     z-index: 3;
-    height: 101%;
+    min-height: 101%;
 }
 #menu a{
     text-decoration: none;
@@ -218,6 +218,14 @@ body{
 }
 #menu .profile{
     padding: 50px 0 70px 120px;
+}
+#menu .profile .settings{
+    text-align: right;
+    font-size: 60px;
+}
+#menu .profile .settings i{
+    margin: 0;
+    color: #929292;
 }
 #menu .profile .name{
     padding-top: 20px;
@@ -279,12 +287,30 @@ nav{
 .slider .center img{
     width: 100%;
 }
-i{
+#menu i{
     margin-right: 40px;
+}
+#menu .home i,
+#menu .cultura i,
+#menu .esportes i{
+    margin-right: 60px;
+    margin-left: 15px;
+}
+#menu .servicos i{
+    margin-right: 50px;
+    margin-left: 10px;
+}
+#menu .unidades i{
+    margin-right: 70px;
+    margin-left: 20px;
+}
+#menu .cursos i{
+    margin-right: 69px;
+    margin-left: 20px;
 }
 #background{
     width: 100%;
-    height: 100%;
+    height: 140%;
     position: absolute;
     background: #000000;
     z-index: 1;
@@ -753,12 +779,13 @@ i{
 	background-image: url("../image/unit-details/bg_unidades.png");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
-	margin: 0 auto;
-	max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+	/* max-width: 800px; */
 }
 #topo {
 	text-align: center;
-	padding-top: 10px;
+	padding: 20px 30px 0 10px;
 }
 #bt-voltar, #bt-buscar {
 	display: block;
@@ -793,32 +820,32 @@ i{
 	background-image: url("../image/unit-details/img_main.jpg");
 	background-size: auto 110%;
 	background-position: center;
-	height: 183px;
-	overflow: hidden;
+    height: 490px;
+    overflow: hidden;
 }
 #tour img {
 	display: block;
 	width: 20%;
-	margin: 115px 0px 0px 72%;
+    margin: 330px 0px 0px 73%;
 }
 .unit-details main {
-	padding: 15px 15px 15px 15px;
+	padding: 40px;
 }
 #fotos {
-	padding-top: 15px;
+    padding-top: 5px;
 	padding-bottom: 0px;
 	overflow: hidden;
 }
 #fotos img {
 	display: block;
-	width: 31%;
+	width: 33%;
 	margin-right: 3px;
 	float: left;   			
 }
 .unit-details h2 {
 	font-family: 'roboto', sans-serif;
 	color: #000;
-	font-size: 26px;
+	font-size: 70px;
 	font-weight: 300;
 	margin-bottom: 5px;
 	margin-top: 15px;
@@ -830,23 +857,23 @@ i{
 	font-weight: 300;
 	background-image: url("../image/unit-details/icn_pin.png");
 	background-repeat: no-repeat;
-	background-size: 14px auto;
-	padding-left: 17px;
+	background-size: 34px auto;
+	padding-left: 45px;
 	margin-top: 0;
 }
-.unit-details .tx-telefone, .tx-email {
+.unit-details .tx-telefone, .unit-details .tx-email {
 	font-family: 'roboto', sans-serif;
 	color: #000;
 	font-size: 16px;
 	font-weight: 400;
 	background-image: url("../image/unit-details/icn_phone.png");
 	background-repeat: no-repeat;
-	background-size: 28px auto;
-	padding-left: 37px;
+	background-size: 80px auto;
+	padding-left: 110px;
 	margin-top: 30px;
 	margin-left: 8%;
 }
-.unit-details .tx-telefone span, .tx-email span {
+.unit-details .tx-telefone span, .unit-details .tx-email span {
 	color: #4f4f4f;
 	font-weight: 300;
 	font-size: 14px;
@@ -857,7 +884,8 @@ i{
 	margin-left: 8%;			
 }
 .unit-details hr {
-	border: #EEEEEE solid 1px;
+    border: #EEEEEE solid 2px;
+    margin: 50px 0;
 }
 
 .unit-details h3 {
@@ -879,17 +907,18 @@ i{
 	position: fixed;
 	bottom: 0;
 	background-color: white;
-	padding: 20px;
+	padding: 60px 0;
 	width: 100%;
 	text-align: center;
-	box-shadow: 0px 5px 18px #666;
+    box-shadow: 0px 15px 60px #666;
 }
 #fixo-inferior a {
 	background-color: #000;
-	padding: 10px 50px;
+	padding: 30px 140px;
 	color: white;
 	text-decoration: none;
 	font-family: 'roboto', sans-serif;
 	font-weight: 400;
-	border-radius: 34px;
+    border-radius: 100px;
+    font-size: 40px;
 }
