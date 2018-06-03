@@ -402,8 +402,21 @@ nav{
     padding-top: 15px;
     color: #ffffff;
 }
+.slider .center .bottom i.icon-cursos{
+    padding-top: 20px;
+    font-size: 60px;
+}
+.slider .center .bottom i.icon-esportes{
+    padding-left: 3px;
+}
 .slider .center .bottom.cultura{
     background: linear-gradient(45.62deg, #C51B1B -16.62%, #FF5F4F 100.09%);
+}
+.slider .center .bottom.cursos{
+    background: linear-gradient(49.97deg, #FDEB71 5.25%, #F8D800 100.19%);
+}
+.slider .center .bottom.esportes{
+    background: linear-gradient(228.78deg, #17D6FF -22.78%, #3A7BD5 100.09%);
 }
 .clear{
     clear: both;
